@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>臭屁马月月</title></title>
   <style>
     * {
       margin: 0;
@@ -12,14 +12,24 @@
     }
     .big {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }
 
     #btn {
-      width: 100px;
+      margin: 10px;
+      width: 200px;
       border: 1px solid #ccc;
-      background-color: pink;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+    #btn1 {
+      margin: 10px;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 20px;
     }
   </style>
 </head>
@@ -28,17 +38,21 @@
     <div>
       <h1 id="h1">马月月是个大坏蛋</h1>
     </div>
-    <div class="small">
-      <button id="btn">点击让你变好人</button>
-    </div>
+    <button id="btn">点我让你变好人</button>
+    <button id="btn1">点我再让你变坏蛋</button>
+    <img src="" alt="">
   </div>
 
 
   <script>
     const btn = document.getElementById('btn')
+    const btn1 = document.getElementById('btn1')
     let h1 = document.getElementById('h1')
     btn.onclick = () => {
-      h1.innerHTML = "你变成好人了"
+        h1.innerHTML = '你变好人了'
+    }
+    btn1.onclick = () => {
+        h1.innerHTML = '你又是坏蛋了'
     }
   </script>
 </body>
